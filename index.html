@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//yandex.st/jquery/1.9.1/jquery.min.js"></script>
+    <!-- SlickSlider-->
+    <link rel="stylesheet" type="text/css" href="slick//slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!---------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Safehouse</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-navbar">
+                <a href="" class="logo-link">
+                    <img src="./img/logo.png" alt="" class="logo-img">
+                </a>
+                <nav class="header-navlink">
+                    <a href="#gallery" class="navlink__item ">Портфолио</a>
+                    <a href="#services" class="navlink__item ">Услуги</a>
+                    <a href="#price" class="navlink__item ">Цены</a>
+                    <a href="#contacts" class="navlink__item ">Контакты</a>
+                    <div class="header-phone">
+                        <a href="tel:+375251234567">+375 (25) 123-45-67</a>
+                        <span>Заказать звонок</span>
+                    </div>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <div class="mobile-menu-btn__item"></div>
+                    <div class="mobile-menu-btn__item"></div>
+                    <div class="mobile-menu-btn__item"></div>
+                </div>
+            </div>   
+        </div>
+    </header>
+    <section class="section__hero">
+        <div class="container">
+            <section class="section__hero-block">
+                    <div class="hero__content">
+                        <div class="hero__title">Строительство<br>и ремонт в Гомеле</div>
+                        <div class="hero__subtitle">Надежное будущее строим вместе</div>
+                        <div class="hero__btn">Получить консультацию </div>
+                    </div>
+                    <div class="hero__slider-wrapp">
+                        <div class="hero__slider">
+                            <div class="hero__slider-btn left-btn"></div>
+                            <div class="slider-main">
+                                <div class="slider-item slide-1"></div>
+                                <div class="slider-item slide-2"></div>
+                                <div class="slider-item slide-3"></div>
+                                <div class="slider-item slide-4"></div>
+                            </div>
+                            <div class="hero__slider-btn right-btn"></div>
+                        </div>
+                    </div>
+            </section>
+    </section>
+</div>
+    <section class="section__work">
+        <div class="section__work-wrapper">
+            <div class="container">
+                <div class="work__title-block">
+                    <div class="work__title-block__item"></div>
+                    <div class="work__title">КАК МЫ РАБОТАЕМ</div>
+                    <div class="work__title-block__item"></div>
+                </div>
+                <div class="work__item-block">
+                    <div class="work__item">
+                        <div class="work__item-number">01</div>
+                        <div class="work__item-text">Бесплатный выезд мастера на объект для оценки работы </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-number">03</div>
+                        <div class="work__item-text">Оформление и подписание договора</div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-number">02</div>
+                        <div class="work__item-text">Обсуждение работы с заказчиком </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-number">04</div>
+                        <div class="work__item-text">Выполнение работ в соответствии с пожеланиями заказчика</div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-number">05</div>
+                        <div class="work__item-text">Прием работы заказчиком  и окончательный расчет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__services" id="#services">
+        <div class="container">
+            <div class="services__title-block">
+                <div class="services__title">НАШИ УСЛУГИ</div>
+            </div>
+            <div class="services__block">
+                <div class="services__block-nav">
+                    <div class="services__block-nav__item services-nav-1" id="services-nav-1">
+                        <div class="services__block-nav__item-text services-nav-active">Отделочные<br>работы</div>
+                    </div>
+                    <div class="services__block-nav__item services-nav-2" id="services-nav-2">
+                        <div class="services__block-nav__item-text">Строительство<br>домов</div>
+                    </div>
+                    <div class="services__block-nav__item services-nav-3" id="services-nav-3">
+                        <div class="services__block-nav__item-text">Электрика</div>
+                    </div>
+                    <div class="services__block-nav__item services-nav-4" id="services-nav-4">
+                        <div class="services__block-nav__item-text">Сантехника</div>
+                    </div>
+                </div>
+                <div class="services__block-content">
+                    <div class="services__block-content__item" id="services-1">
+                        <div class="services__block-content__item__title">Отделочные работы</div>
+                        <ul class="services__block-content__item__list">
+                            <li class="services__block-content__item__list-paragraph">Электромонтажные и сантехнические работы</li>
+                            <li class="services__block-content__item__list-paragraph">Демонтажные работы</li>
+                            <li class="services__block-content__item__list-paragraph">Штукатурные работы</li>
+                            <li class="services__block-content__item__list-paragraph">Малярные работы</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж ГКЛ</li>
+                            <li class="services__block-content__item__list-paragraph">Облицовка стен и потолков</li>
+                            <li class="services__block-content__item__list-paragraph">Укладка плитки</li>
+                            <li class="services__block-content__item__list-paragraph">Укладка всех видов наполных покрытий</li>
+                        </ul>
+                    </div>
+                    <div class="services__block-content__item" id="services-2">
+                        <div class="services__block-content__item__title">Строительство домов</div>
+                        <ul class="services__block-content__item__list">
+                            <li class="services__block-content__item__list-paragraph">Профессиональная укладка блоков ПГС</li>
+                            <li class="services__block-content__item__list-paragraph">Укладка кирпича</li>
+                            <li class="services__block-content__item__list-paragraph">Укладка пазогребневых плит</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж плит</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж перекрытий</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж балок и пермычек</li>
+                            <li class="services__block-content__item__list-paragraph">Изготовление монолитного пола</li>
+                            <li class="services__block-content__item__list-paragraph">Установка перегородок</li>
+                            <li class="services__block-content__item__list-paragraph">Установка вентиляционных каналов</li>
+                            <li class="services__block-content__item__list-paragraph">Кровельные работы любой сложности</li>
+                        </ul>
+                    </div>
+                    <div class="services__block-content__item" id="services-3">
+                        <div class="services__block-content__item__title">Электрика</div>
+                        <ul class="services__block-content__item__list">
+                            <li class="services__block-content__item__list-paragraph">Замена розеток и выключателей</li>
+                            <li class="services__block-content__item__list-paragraph">Перенос розеток и выключателей</li>
+                            <li class="services__block-content__item__list-paragraph">Замена электропроводки</li>
+                            <li class="services__block-content__item__list-paragraph">Сборка электросчетчиков</li>
+                            <li class="services__block-content__item__list-paragraph">Установка электросчетчиков</li>
+                        </ul>
+                    </div>
+                    <div class="services__block-content__item" id="services-4">
+                        <div class="services__block-content__item__title">Сантехника</div>
+                        <ul class="services__block-content__item__list">
+                            <li class="services__block-content__item__list-paragraph">Перенос и установка счетчиков</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж и ремонт водопровода</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж отопления</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж канализации</li>
+                            <li class="services__block-content__item__list-paragraph">Замена и перенос  полотенцесушителя</li>
+                            <li class="services__block-content__item__list-paragraph">Установка кранов на полотенцесушитель</li>
+                            <li class="services__block-content__item__list-paragraph">Установка инсталляций</li>
+                            <li class="services__block-content__item__list-paragraph">Установка всех видов сантех оборудования</li>
+                            <li class="services__block-content__item__list-paragraph">Замена батарей отопления</li>
+                            <li class="services__block-content__item__list-paragraph">Замена и демонтаж радиатора отопления</li>
+                            <li class="services__block-content__item__list-paragraph">Замена труб в ванной и туалете</li>
+                            <li class="services__block-content__item__list-paragraph">Замена труб в ванной</li>
+                            <li class="services__block-content__item__list-paragraph">Замена труб на пластиковые</li>
+                            <li class="services__block-content__item__list-paragraph">Монтаж трубопроводов ПВХ</li>
+                            <li class="services__block-content__item__list-paragraph">Замена и демонтаж радиатора отопления</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="services__block-text">
+                Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его 
+                спланируете, тем проще будет его пережить. А уютная, привлекательная и чистая квартира – 
+                это мечта любого человека. 
+            </div>
+        </div>
+    </section>
+    <section class="section__form-1">
+        <div class="section-form__title color-title">Давайте воплотим Ваши мечты  в реальность!</div>
+        <div class="section__form-1__block">
+            <div class="container">
+                <form action="" class="section__form__block-form">
+                    <span class="block-form__title">ЗАПОЛНИТЕ ФОРМУ</span>
+                    <input type="text" placeholder="Ваше имя" class="block-form__input">
+                    <input type="tel" name="" id="" placeholder="Номер телефона" class="block-form__input">
+                    <label for="" class="block-form__label">Опишите Вашу  заявку</label>
+                    <textarea name="" id="" cols="30" rows="10" class="block-form__text">
+
+                    </textarea>
+                    <button type="submit" class="block-form__button">Получить консультацию</button>
+                    <div class="block-form__check-section">
+                        <input type="radio" name="" id="" class="form__radiobtn">
+                        <div class="check-section__check-wrapper">
+                            <div class="check-section__check-item"></div>
+                        </div>
+                        <div class="check-section__text">Принимаю условия Политики конфединциальности</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section__about-us">
+        <div class="container">
+            <div class="about-us__block">
+                <div class="about-us__block-text">
+                    <div class="about-us__title">О НАС</div>
+                    <ul class="about-us__list">
+                        <li class="about-us__list-item">Качественное проведение работ</li>
+                        <li class="about-us__list-item">Обсуждение работы на каждом этапе</li>
+                        <li class="about-us__list-item">Профессиональный инструмент</li>
+                        <li class="about-us__list-item">Начинаем работу без аванса</li>
+                        <li class="about-us__list-item">Доступные цены</li>
+                    </ul>
+                </div>
+                <div class="about-us__slider">
+                    <div class="about-us__block-slider">
+                        <div class="about-us__slider-item">
+                            <span class="about-us__slider-item__text">более</span>
+                            <span class="about-us__slider-item__main-text">15</span>
+                            <span class="about-us__slider-item__text">лет успешной работы</span>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <span class="about-us__slider-item__text">более</span>
+                            <span class="about-us__slider-item__main-text">1000</span>
+                            <span class="about-us__slider-item__text">м2 готовых объектов</span>
+                        </div>
+                        <div class="about-us__slider-item">
+                            <span class="about-us__slider-item__text">более</span>
+                            <span class="about-us__slider-item__main-text">500</span>
+                            <span class="about-us__slider-item__text">довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__gallery" id="#gallery">
+        <div class="container">
+            <div class="gallery__title-block">
+                <div class="gallery__title-block__item"></div>
+                <div class="gallery__title">ГАЛЕРЕЯ РАБОТ</div>
+                <div class="gallery__title-block__item"></div>
+            </div>
+            <div class="gallery__content-block">
+                <div class="gallery__item-block" id="g-1">
+                    <div class="gallery__item-wrap"></div>
+                    <div class="gallery__item-img gallery-img-1">
+                        <div class="gallery__item-img__text">ПЛИТКА</div>
+                    </div>
+                </div>
+                <div class="gallery__item-block" id="g-2">
+                    <div class="gallery__item-img gallery-img-2">
+                        <div class="gallery__item-img__text">КЛАДКА</div>
+                    </div>
+                    <div class="gallery__item-wrap"></div>
+                </div>
+                <div class="gallery__item-block" id="g-3">
+                    <div class="gallery__item-img gallery-img-3">
+                        <div class="gallery__item-img__text">ОТДЕЛКА</div>
+                    </div>
+                    <div class="gallery__item-wrap"></div>
+                </div>
+                <div class="gallery__item-block" id="g-4">
+                    <div class="gallery__item-img gallery-img-4">
+                        <div class="gallery__item-img__text">КРОВЛЯ</div>
+                    </div>
+                    <div class="gallery__item-wrap"></div>
+                </div>
+                <div class="gallery__item-block" id="g-5">
+                    <div class="gallery__item-img gallery-img-5">
+                        <div class="gallery__item-img__text">САНТЕХНИКА</div>
+                    </div>
+                    <div class="gallery__item-wrap"></div>
+                </div>
+                <div class="gallery__item-block" id="g-6">
+                    <div class="gallery__item-img gallery-img-6">
+                        <div class="gallery__item-img__text">ЭЛЕКТРИКА</div>
+                    </div>
+                    <div class="gallery__item-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__prise" id="#price">
+        <div class="container">
+            <div class="section__prise__title">ПРАЙС-ЛИСТ НА УСЛУГИ</div>
+            <div class="price__container">
+                <div class="price__nav-block">
+                    <div class="price__nav-item price__nav-item-active" id="p-nav-1"><span class="price__nav-item-text price__nav-item-text-active">Отделка</span></div>
+                    <div class="price__nav-item" id="p-nav-2"><span class="price__nav-item-text">Строительство</span></div>
+                    <div class="price__nav-item" id="p-nav-3"><span class="price__nav-item-text">Кровля</span></div>
+                    <div class="price__nav-item" id="p-nav-4"><span class="price__nav-item-text">Сантехника</span></div>
+                    <div class="price__nav-item" id="p-nav-5"><span class="price__nav-item-text">Электрика</span></div>
+                </div>
+                <div class="price__conteiner-list">
+                    <div class="price-list price-list-1 price-list-active" id="price-list">
+                        <div class="price-list__item price-list__title">
+                            <div class="price-list__item-name">Наименование работ</div>
+                            <div class="price-list__item-unit">Ед.измерения</div>
+                            <div class="price-list__item-cost">Цена от,  руб</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка по маякам</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка и демонтаж маяка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка потолка по плоскости</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж армирующей сетки</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж ГКЛ (ровный)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ короб</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ со скрытой подсветкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж криволинейного потолочного откоса</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Финишное шлифование и зачистка потолка</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">4</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Проклейка швов серпянкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">3</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж подвесного потолка «Грильято»</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж подвесного потолка «Армстронг»</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">8</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж пластиковых панелей на потолке</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж натяжного потолка (с материалом)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">16</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Поклейка декоративного багета (галтель)</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">44</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Подготовка конструкции короб ГКЛ к покраске</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">4</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Выравнивание балок одна плоскость</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">44</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка перфорированного угла	</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Шлифовка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Заделка стыков ГКЛ, проклейка ленты	</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Покраска потолка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">3</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Покраска конструкций ГКЛ</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">3</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Окраска , полиуретанового потолочного плинтуса</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Оклейка потолочного плинтуса пенопласт</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                    </div>
+                    <div class="price-list price-list-2" id="price-list">
+                        <div class="price-list__item price-list__title">
+                            <div class="price-list__item-name">Наименование работ</div>
+                            <div class="price-list__item-unit">Ед.измерения</div>
+                            <div class="price-list__item-cost">Цена от,  руб</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка по маякам</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка и демонтаж маяка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка потолка по плоскости</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж армирующей сетки</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж ГКЛ (ровный)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ короб</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ со скрытой подсветкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж криволинейного потолочного откоса</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Финишное шлифование и зачистка потолка</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">4</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Проклейка швов серпянкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">3</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж подвесного потолка «Грильято»</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж подвесного потолка «Армстронг»</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">8</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж пластиковых панелей на потолке</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж натяжного потолка (с материалом)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">16</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Поклейка декоративного багета (галтель)</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">44</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Подготовка конструкции короб ГКЛ к покраске</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">4</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Выравнивание балок одна плоскость</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">44</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка перфорированного угла	</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                    </div>
+                    <div class="price-list price-list-3" id="price-list">
+                        <div class="price-list__item price-list__title">
+                            <div class="price-list__item-name">Наименование работ</div>
+                            <div class="price-list__item-unit">Ед.измерения</div>
+                            <div class="price-list__item-cost">Цена от,  руб</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка по маякам</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка и демонтаж маяка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка потолка по плоскости</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж армирующей сетки</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж ГКЛ (ровный)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ короб</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ со скрытой подсветкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж криволинейного потолочного откоса</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">12</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Финишное шлифование и зачистка потолка</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">4</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Проклейка швов серпянкой</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">3</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж подвесного потолка «Грильято»</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                    </div>
+                    <div class="price-list price-list-4" id="price-list">
+                        <div class="price-list__item price-list__title">
+                            <div class="price-list__item-name">Наименование работ</div>
+                            <div class="price-list__item-unit">Ед.измерения</div>
+                            <div class="price-list__item-cost">Цена от,  руб</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка по маякам</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка и демонтаж маяка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка потолка по плоскости</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж армирующей сетки</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">2</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж ГКЛ (ровный)</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Монтаж конструкций ГКЛ короб</div>
+                            <div class="price-list__item-unit">м.пог</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                    </div>
+                    <div class="price-list price-list-5" id="price-list">
+                        <div class="price-list__item price-list__title">
+                            <div class="price-list__item-name">Наименование работ</div>
+                            <div class="price-list__item-unit">Ед.измерения</div>
+                            <div class="price-list__item-cost">Цена от,  руб</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка по маякам</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">10</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Установка и демонтаж маяка</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__item-name">Штукатурка потолка по плоскости</div>
+                            <div class="price-list__item-unit">м²</div>
+                            <div class="price-list__item-cost">5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prise__btn-block">
+                <div class="downloade-price">Скачать весь прайс</div>
+            </div>
+        </div>
+    </section>
+    <section class="section__form-2" id="#contacts">
+        <div class="section-form__title">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</div>
+        <div class="section__form-2__block">
+            <div class="container">
+                <form action="" class="section__form__block-form-2">
+                    <span class="block-form-2__title">ЗАПОЛНИТЕ ФОРМУ</span>
+                    <input type="text" placeholder="Ваше имя" class="block-form-2__input">
+                    <input type="tel" name="" id="" placeholder="Номер телефона" class="block-form-2__input">
+                    <label for="" class="block-form-2__label">Опишите Вашу  заявку</label>
+                    <textarea name="" id="" cols="30" rows="10" class="block-form-2__text">
+    
+                    </textarea>
+                    <button type="submit" class="block-form-2__button">Получить консультацию</button>
+                    <div class="block-form-2__check-section">
+                        <input type="radio" name="" id="" class="form-2__radiobtn">
+                        <div class="check-section-2__check-wrapper">
+                                <div class="check-section-2__check-item"></div>
+                        </div>
+                        <div class="check-section-2__text">Принимаю условия Политики конфединциальности</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="section__footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-block__contacts">
+                    <a href="tel:+375-29-123-45-67" class="footer-block__contacts-phone">+ 375-29-123-45-67</a>
+                    <a href="mailto:stroyka@gmail.com" class="footer-block__contacts-email">stroyka@gmail.com</a>
+                </div>
+                <div class="footer-block__info">
+                    <span class="footer-info-text">ИП Костин А.Н.</span>
+                    <span class="footer-info-text">УНП      11111111111</span>
+                    <span class="footer-info-text">Юридический адрес</span>
+                </div>
+            </div>
+            <div class="footer__title"> © Safehouse 2021</div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="gallery__window-wrap">
+        <div class="gallery__container-1 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">ПЛИТКА</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+                <img src="./img/gallery/img-1.png" alt="" class="g-img">
+            </div>
+        </div>
+        <div class="gallery__container-2 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">КЛАДКА</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+                <img src="./img/gallery/img-2.png" alt="" class="g-img">
+            </div>
+        </div>
+        <div class="gallery__container-3 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">ОТДЕЛКА</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+                <img src="./img/gallery/img-3.png" alt="" class="g-img">
+            </div>
+        </div>
+        <div class="gallery__container-4 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">КРОВЛЯ</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+                <img src="./img/gallery/img-4.png" alt="" class="g-img">
+            </div>
+        </div>
+        <div class="gallery__container-5 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">САНТЕХНИКА</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+                <img src="./img/gallery/img-5.png" alt="" class="g-img">
+            </div>
+        </div>
+        <div class="gallery__container-6 gallery__container">
+            <div class="modal-close"></div>
+            <div class="gallery__container__title">ЭЛЕКТРИКА</div>
+            <div class="gallery">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+                <img src="./img/gallery/img-6.png" alt="" class="g-img">
+            </div>
+        </div>
+    </div>
+<script src="./js/main.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+</body>
+</html>
